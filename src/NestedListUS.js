@@ -12,15 +12,6 @@ const NestedListUS = ({ data, activeMenu, setactiveMenu }) => {
 
   return (
     <>
-      {/* <li>
-        <button
-          className="button-back"
-          type="button"
-          onClick={() => setactiveMenu(null)}
-        >
-          back
-        </button>
-      </li> */}
       {data.subMenu.map((obj) => (
         <li key={obj.id}>
           <p onClick={()=>openCollectionAction(obj.collectionId)} className="button-bracket">

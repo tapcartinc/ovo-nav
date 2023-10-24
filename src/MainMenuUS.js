@@ -2,19 +2,10 @@ import React, { useEffect, useState } from "react";
 import "./App.scss";
 import NestedListUS from "./NestedListUS";
 import "./index.css";
-import { useActions, useVariables } from "@tapcart/webbridge-react";
 import { useParams } from "react-router-dom";
 
 const MainMenuUS = () => {
-  const { openCollection, openScreen } = useActions();
   const [activeMenu, setactiveMenu] = useState(null);
-  const [authMenuActive, setauthMenuActive] = useState("login");
-
-  const closeButton = () => {
-    openScreen({
-      destination: { type: "internal", url: "/collections" }
-    });
-  };
   const data = [
     {
       id: 1,
@@ -420,22 +411,6 @@ const MainMenuUS = () => {
           )}
         </ul>
         <hr />
-        {/* <div className="auth-menu">
-          <button
-            type="button"
-            className={authMenuActive === "login" && "active"}
-            onClick={() => setauthMenuActive("login")}
-          >
-            Login
-          </button>
-          <button
-            type="button"
-            onClick={() => setauthMenuActive("register")}
-            className={authMenuActive === "register" && "active"}
-          >
-            Register
-          </button>
-        </div> */}
       </div>
     </div>
   );
