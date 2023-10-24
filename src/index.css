@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Helvetica Now Text";
+  src: url("./assets/webfonts/helvetica-now-text-family-font/HelveticaNowText-Medium.otf");
+  font-weight: 600;
+}
+
+body {
+  margin: 0;
+  font-family: "Helvetica Now Text", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
